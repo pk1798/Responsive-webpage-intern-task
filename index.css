@@ -12,7 +12,7 @@ input:focus{
     outline: none;
 }
 
-.search-bar:hover , button:hover{
+input:hover , button:hover, input+svg{
     cursor: pointer;
 }
 
@@ -57,6 +57,7 @@ nav ul{
 
 nav ul li a{
     text-decoration: none;
+    font-weight: bold;
     color: #ffffff;
 }
 
@@ -70,6 +71,7 @@ nav button{
     background-color: #2086fb;
     color: #ffffff;
     font-size: 1.5rem;
+    font-weight: 600;
     margin: 14px 48px 14px 40px;
 }
 
@@ -104,7 +106,8 @@ nav button{
 .search-bar{
     width: 77%;
     height: 5.3rem;
-    border: 5px solid rgba(0, 0, 0, 0.6); 
+    border: 5px solid rgba(0, 0, 0 , 0.4) ; 
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -117,12 +120,15 @@ nav button{
 
 .search-bar svg{
     color: #4a4a4a;
+    font-weight: bold;
 }
 
-.search-bar input {
+.search-bar input,.search-bar input::placeholder {
     border: none;
     width: 100%;
     height: 22px;
+    color: #9b9b9b;
+    font-weight: 400;
 }
 
 /* ****** main ****** */
@@ -179,6 +185,8 @@ article img{
     height: 80px;
     padding-top: 52px;
     padding-bottom: 24px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 article h5{
@@ -189,15 +197,13 @@ article h5{
     color: #4a4a4a;
 }
 article p{
-    width: 264px;
-    height: 78px;
     font-size: 1.6rem;
     margin: 0;
     text-align: center;
     line-height: 26px;
-    padding-bottom: 60px;
     color: #858585;
     font-weight: normal;
+    padding: 0 20px 60px;
 }
 
 
@@ -237,6 +243,7 @@ footer{
     margin: 0;
     border-radius: 22px;
     border: none;
+    font-family: 'Open Sans', sans-serif;
     background-color: #2086fb;
     color: #ffffff;
     font-size: 1.5rem;
@@ -264,6 +271,7 @@ footer{
     text-align: center;
     background-color: #4a4a4a;
     border: none;
+    border-radius: 5px;
     color: #979797;
     position: absolute;
     bottom: 50px;
@@ -347,6 +355,9 @@ button a {
 
 
    /*******footer*******/
+.footer-desc{
+    padding: 0 20px 0;
+}
 
  }
 
@@ -421,5 +432,15 @@ button a {
 
  
    /*******footer*******/
+
+    
+.footer-copyrights h6{
+    text-align: center;
+}
+
+.footer-desc{
+    padding: 0 25px 0;
+}
+
 
  }
